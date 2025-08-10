@@ -1,2 +1,1 @@
-# BoonOrg.Core
-This is the core package of the BoonOrg suite
+﻿BoonOrg.Core is the meta package for BoonOrg based applications.

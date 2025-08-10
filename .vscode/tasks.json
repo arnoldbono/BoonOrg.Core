@@ -1,0 +1,1034 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build Core.Registrations.Interfaces",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Registrations/BoonOrg.Registrations.Interfaces/BoonOrg.Registrations.Interfaces.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": []
+    },
+    {
+      "label": "build Core.Registrations.Domain",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Registrations/BoonOrg.Registrations.Domain/BoonOrg.Registrations.Domain.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Registrations.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Registrations",
+      "problemMatcher": [],
+      "dependsOn": [
+        "build Core.Registrations.Domain"
+      ]
+    },
+    {
+      "label": "build Core.Identification.Interfaces",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Identification/BoonOrg.Identification.Interfaces/BoonOrg.Identification.Interfaces.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": []
+    },
+    {
+      "label": "build Core.Identification.Domain",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Identification/BoonOrg.Identification.Domain/BoonOrg.Identification.Domain.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Identification.Addin",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Identification/BoonOrg.Identification.Addin/BoonOrg.Identification.Addin.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Registrations.Interfaces",
+        "build Core.Identification.Interfaces",
+        "build Core.Identification.Domain"
+      ]
+    },
+    {
+      "label": "build Core.Identification",
+      "problemMatcher": [],
+      "dependsOn": [
+        "build Core.Identification.Addin",
+        "build Core.Registrations.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Functions.Interfaces",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Functions/BoonOrg.Functions.Interfaces/BoonOrg.Functions.Interfaces.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Functions.Domain",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Functions/BoonOrg.Functions.Domain/BoonOrg.Functions.Domain.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Registrations.Interfaces",
+        "build Core.Functions.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Functions.Logic",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Functions/BoonOrg.Functions.Logic/BoonOrg.Functions.Logic.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Registrations.Interfaces",
+        "build Core.Functions.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Functions.Addin",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Functions/BoonOrg.Functions.Addin/BoonOrg.Functions.Addin.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces",
+        "build Core.Functions.Interfaces",
+        "build Core.Functions.Domain",
+        "build Core.Functions.Logic"
+      ]
+    },
+    {
+      "label": "build Core.Functions",
+      "problemMatcher": [],
+      "dependsOn": [
+        "build Core.Functions.Addin"
+      ]
+    },
+    {
+      "label": "build Core.Commands.Interfaces",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Commands/BoonOrg.Commands.Interfaces/BoonOrg.Commands.Interfaces.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces",
+        "build Core.Functions.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Commands.Domain",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Commands/BoonOrg.Commands.Domain/BoonOrg.Commands.Domain.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces",
+        "build Core.Commands.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Commands.Addin",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Commands/BoonOrg.Commands.Addin/BoonOrg.Commands.Addin.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces",
+        "build Core.Functions.Interfaces",
+        "build Core.Commands.Interfaces",
+        "build Core.Commands.Domain"
+      ]
+    },
+    {
+      "label": "build Core.Commands",
+      "problemMatcher": [],
+      "dependsOn": [
+        "build Core.Commands.Addin"
+      ]
+    },
+    {
+      "label": "build Core.Storage.Interfaces",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Storage/BoonOrg.Storage.Interfaces/BoonOrg.Storage.Interfaces.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Storage.Domain",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Storage/BoonOrg.Storage.Domain/BoonOrg.Storage.Domain.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Commands.Interfaces",
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces",
+        "build Core.Functions.Interfaces",
+        "build Core.Functions.Domain",
+        "build Core.Storage.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Storage.Logic",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Storage/BoonOrg.Storage.Logic/BoonOrg.Storage.Logic.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces",
+        "build Core.Storage.Interfaces",
+        "build Core.Storage.Domain"
+      ]
+    },
+    {
+      "label": "build Core.Storage.Addin",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Storage/BoonOrg.Storage.Addin/BoonOrg.Storage.Addin.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Commands.Interfaces",
+        "build Core.Functions.Interfaces",
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces",
+        "build Core.Storage.Interfaces",
+        "build Core.Storage.Domain",
+        "build Core.Storage.Logic"
+      ]
+    },
+    {
+      "label": "build Core.Storage",
+      "problemMatcher": [],
+      "dependsOn": [
+        "build Core.Storage.Addin"
+      ]
+    },
+    {
+      "label": "build Core.Actions.Interfaces",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Actions/BoonOrg.Actions.Interfaces/BoonOrg.Actions.Interfaces.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Commands.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Actions.Domain",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Actions/BoonOrg.Actions.Domain/BoonOrg.Actions.Domain.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Commands.Interfaces",
+        "build Core.Registrations.Interfaces",
+        "build Core.Actions.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Actions.Addin",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Actions/BoonOrg.Actions.Addin/BoonOrg.Actions.Addin.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Registrations.Interfaces",
+        "build Core.Actions.Interfaces",
+        "build Core.Actions.Domain"
+      ]
+    },
+    {
+      "label": "build Core.Actions",
+      "problemMatcher": [],
+      "dependsOn": [
+        "build Core.Actions.Addin"
+      ]
+    },
+    {
+      "label": "build Core.Units.Interfaces",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Units/BoonOrg.Units.Interfaces/BoonOrg.Units.Interfaces.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": []
+    },
+    {
+      "label": "build Core.Units.Domain",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Units/BoonOrg.Units.Domain/BoonOrg.Units.Domain.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Registrations.Interfaces",
+        "build Core.Units.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Units.Addin",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Units/BoonOrg.Units.Addin/BoonOrg.Units.Addin.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Registrations.Interfaces",
+        "build Core.Units.Interfaces",
+        "build Core.Units.Domain"
+      ]
+    },
+    {
+      "label": "build Core.Units",
+      "problemMatcher": [],
+      "dependsOn": [
+        "build Core.Units.Interfaces",
+        "build Core.Units.Domain",
+        "build Core.Units.Addin"
+      ]
+    },
+    {
+      "label": "build Core.Geometry.Interfaces",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Geometry/BoonOrg.Geometry.Interfaces/BoonOrg.Geometry.Interfaces.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Actions.Interfaces",
+        "build Core.Commands.Interfaces",
+        "build Core.Functions.Interfaces",
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces",
+        "build Core.Storage.Interfaces",
+        "build Core.Units.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Surfaces.Interfaces",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Surfaces/BoonOrg.Surfaces.Interfaces/BoonOrg.Surfaces.Interfaces.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Commands.Interfaces",
+        "build Core.Geometry.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.DrawingTools.Interfaces",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/DrawingTools/BoonOrg.DrawingTools.Interfaces/BoonOrg.DrawingTools.Interfaces.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Geometry.Interfaces",
+        "build Core.Surfaces.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Geometry.Domain",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Geometry/BoonOrg.Geometry.Domain/BoonOrg.Geometry.Domain.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Functions.Interfaces",
+        "build Core.Identification.Interfaces",
+        "build Core.Identification.Domain",
+        "build Core.Registrations.Interfaces",
+        "build Core.Storage.Interfaces",
+        "build Core.Geometry.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Geometry.Logic",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Geometry/BoonOrg.Geometry.Logic/BoonOrg.Geometry.Logic.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Commands.Interfaces",
+        "build Core.DrawingTools.Interfaces",
+        "build Core.Functions.Interfaces",
+        "build Core.Functions.Domain",
+        "build Core.Identification.Interfaces",
+        "build Core.Identification.Domain",
+        "build Core.Registrations.Interfaces",
+        "build Core.Storage.Interfaces",
+        "build Core.Geometry.Interfaces",
+        "build Core.Geometry.Domain"
+      ]
+    },
+    {
+      "label": "build Core.Geometry.Storage",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Geometry/BoonOrg.Geometry.Storage/BoonOrg.Geometry.Storage.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Commands.Interfaces",
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces",
+        "build Core.Storage.Interfaces",
+        "build Core.Units.Interfaces",
+        "build Core.Geometry.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Geometry.TestData",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Geometry/BoonOrg.Geometry.TestData/BoonOrg.Geometry.TestData.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Geometry.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Geometry.UnitTests",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Geometry/BoonOrg.Geometry.UnitTests/BoonOrg.Geometry.UnitTests.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Commands.Interfaces",
+        "build Core.Functions.Interfaces",
+        "build Core.Identification.Domain",
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Domain",
+        "build Core.Registrations.Interfaces",
+        "build Core.Geometry.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Geometry.Addin",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Geometry/BoonOrg.Geometry.Addin/BoonOrg.Geometry.Addin.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Geometry.Domain",
+        "build Core.Geometry.Interfaces",
+        "build Core.Geometry.Logic",
+        "build Core.Geometry.Storage",
+        "build Core.Geometry.TestData",
+        "build Core.Geometry.UnitTests"
+      ]
+    },
+    {
+      "label": "build Core.Geometry.Logic.Tests",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Geometry/BoonOrg.Geometry.Logic.Tests/BoonOrg.Geometry.Logic.Tests.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Geometry.Addin",
+        "build Core.Geometry.TestData",
+        "build Core.Geometry.UnitTests"
+      ]
+    },
+    {
+      "label": "build Core.Geometry",
+      "problemMatcher": [],
+      "dependsOn": [
+        "build Core.Geometry.Addin",
+        "build Core.Geometry.Logic.Tests"
+      ]
+    },
+    {
+      "label": "build Core.Surfaces.Domain",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Surfaces/BoonOrg.Surfaces.Domain/BoonOrg.Surfaces.Domain.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Surfaces.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Surfaces.Logic",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Surfaces/BoonOrg.Surfaces.Logic/BoonOrg.Surfaces.Logic.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Surfaces.Domain",
+        "build Core.DrawingTools.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Surfaces.Persistance",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Surfaces/BoonOrg.Surfaces.Persistance/BoonOrg.Surfaces.Persistance.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Geometry.Interfaces",
+        "build Core.Surfaces.Domain"
+      ]
+    },
+    {
+      "label": "build Core.Surfaces.Addin",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Surfaces/BoonOrg.Surfaces.Addin/BoonOrg.Surfaces.Addin.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Surfaces.Interfaces",
+        "build Core.Surfaces.Domain",
+        "build Core.Surfaces.Logic",
+        "build Core.Surfaces.Persistance"
+      ]
+    },
+    {
+      "label": "build Core.Surfaces",
+      "problemMatcher": [],
+      "dependsOn": [
+        "build Core.Surfaces.Addin"
+      ]
+    },
+    {
+      "label": "build Core.DrawingTools.Domain",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/DrawingTools/BoonOrg.DrawingTools.Domain/BoonOrg.DrawingTools.Domain.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Identification.Interfaces",
+        "build Core.DrawingTools.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.DrawingTools.Logic",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/DrawingTools/BoonOrg.DrawingTools.Logic/BoonOrg.DrawingTools.Logic.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.DrawingTools.Domain"
+      ]
+    },
+    {
+      "label": "build Core.DrawingTools.Addin",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/DrawingTools/BoonOrg.DrawingTools.Addin/BoonOrg.DrawingTools.Addin.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.DrawingTools.Logic"
+      ]
+    },
+    {
+      "label": "build Core.DrawingTools",
+      "problemMatcher": [],
+      "dependsOn": [
+        "build Core.DrawingTools.Addin"
+      ]
+    },
+    {
+      "label": "build Core.Scripting.Interfaces",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Scripting/BoonOrg.Scripting.Interfaces/BoonOrg.Scripting.Interfaces.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Commands.Interfaces",
+        "build Core.Functions.Interfaces",
+        "build Core.Identification.Interfaces",
+        "build Core.Storage.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Scripting.Domain",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Scripting/BoonOrg.Scripting.Domain/BoonOrg.Scripting.Domain.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Commands.Interfaces",
+        "build Core.Functions.Domain",
+        "build Core.Functions.Interfaces",
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces",
+        "build Core.Storage.Interfaces",
+        "build Core.Scripting.Interfaces"
+      ]
+    },
+    {
+      "label": "build Core.Scripting.Addin",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/Scripting/BoonOrg.Scripting.Addin/BoonOrg.Scripting.Addin.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/Output",
+        "-f:net8.0"
+      ],
+      "problemMatcher": "$msCompile",
+      "dependsOn": [
+        "build Core.Commands.Interfaces",
+        "build Core.Identification.Interfaces",
+        "build Core.Registrations.Interfaces",
+        "build Core.Storage.Interfaces",
+        "build Core.Scripting.Interfaces",
+        "build Core.Scripting.Domain"
+      ]
+    },
+    {
+      "label": "build Core.Scripting",
+      "problemMatcher": [],
+      "dependsOn": [
+        "build Core.Scripting.Addin"
+      ]
+    },
+    {
+      "label": "build BoonOrg.Core",
+      "problemMatcher": [],
+      "dependsOn": [
+        "build Core.Actions",
+        "build Core.Commands",
+        "build Core.Functions",
+        "build Core.DrawingTools",
+        "build Core.Geometry",
+        "build Core.Identification",
+        "build Core.Registrations",
+        "build Core.Scripting",
+        "build Core.Storage",
+        "build Core.Surfaces",
+        "build Core.Units"
+      ]
+    },
+    {
+      "label": "delete LocalPackage BoonOrg.Core",
+      "type": "shell",
+      "command": "rm",
+      "args": [
+        "-f",
+        "${workspaceFolder}/../BoonOrg/LocalPackages/BoonOrg.Core.1.7.0.nupkg"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "repack BoonOrg.Core",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "pack",
+        "${workspaceFolder}/BoonOrg.Core.Pack.csproj",
+        "-c",
+        "Debug",
+        "-p:Platform=arm64",
+        "-o",
+        "${workspaceFolder}/../BoonOrg/LocalPackages"
+      ],
+      "problemMatcher": [],
+      "dependsOn": [
+        "delete LocalPackage BoonOrg.Core",
+        "build BoonOrg.Core"
+      ]
+    },
+    {
+      "label": "build",
+      "dependsOn": [
+        "repack BoonOrg.Core"
+      ],
+      "problemMatcher": []
+    }
+  ],
+  "options": {
+    "continueOnError": "false"
+  }
+}

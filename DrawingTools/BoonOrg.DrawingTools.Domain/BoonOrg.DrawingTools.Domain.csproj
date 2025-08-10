@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<ProjectGuid>{AB686AB5-91B3-4265-B0D7-2BF7C888876F}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<RootNamespace>BoonOrg.DrawingTools</RootNamespace>
+		<AssemblyName>BoonOrg.DrawingTools.Domain</AssemblyName>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Company>Roland Boon</Company>
+		<Copyright>Copyright © 2023</Copyright>
+		<Description>Domain for DrawingTools</Description>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://boonorg.com</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<VersionPrefix>1.1.0</VersionPrefix>
+		<FileVersion>1.1.0.0</FileVersion>
+		<AssemblyVersion>1.1.0.0</AssemblyVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="System.Reactive" />
+		<PackageReference Include="SixLabors.ImageSharp" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Identification\BoonOrg.Identification.Domain\BoonOrg.Identification.Domain.csproj" />
+		<ProjectReference Include="..\..\Surfaces\BoonOrg.Surfaces.Interfaces\BoonOrg.Surfaces.Interfaces.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\BoonOrg.DrawingTools.Interfaces\BoonOrg.DrawingTools.Interfaces.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Persistance\" />
+	</ItemGroup>
+</Project>

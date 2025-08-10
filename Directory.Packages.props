@@ -1,0 +1,36 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup >
+    <NoWarn>NU1602</NoWarn>   
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Autofac" Version="8.0.0" />
+    <PackageVersion Include="DynamicData" Version="8.0.2" />
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageVersion Include="ReactiveUI" Version="20.1.63" />
+    <PackageVersion Include="SixLabors.ImageSharp" Version="3.1.11" />
+    <PackageVersion Include="Splat" Version="14.7.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="System.Diagnostics.DiagnosticSource" Version="8.0.1" />
+    <PackageVersion Include="System.Numerics.Vectors" Version="4.5.0" />
+    <PackageVersion Include="System.Reactive" Version="6.0.0" />
+    <PackageVersion Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+    <PackageVersion Include="System.ValueTuple" Version="4.5.0" />
+    <PackageVersion Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+    <PackageVersion Include="MSTest.TestAdapter" Version="3.0.2" />
+    <PackageVersion Include="MSTest.TestFramework" Version="3.0.2" />
+    <PackageVersion Include="coverlet.collector" Version="3.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="Mapack" Version="5.0.0" />
+    <PackageVersion Include="BoonOrg.Core" Version="1.7.0" />
+    <PackageVersion Include="BoonOrg.Bfcs" Version="1.6.0" />
+    <PackageVersion Include="BoonOrg.glTF" Version="1.1.0" />
+  </ItemGroup>
+</Project>

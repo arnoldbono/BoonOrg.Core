@@ -1,0 +1,1 @@
+﻿The BoonOrg.Functions.Interfaces packages is an API to create functions with multiple parameters.

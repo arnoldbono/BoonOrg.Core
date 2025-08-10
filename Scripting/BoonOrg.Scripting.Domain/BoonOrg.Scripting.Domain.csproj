@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<ProjectGuid>{A01C1B13-10D4-467C-8869-CEE853A6E8C2}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>BoonOrg.Scripting.Domain</RootNamespace>
+		<AssemblyName>BoonOrg.Scripting.Domain</AssemblyName>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Company>Roland Boon</Company>
+		<Copyright>Copyright © 2022</Copyright>
+		<Description>Implementation for scripting.</Description>
+		<PackageProjectUrl>https://boonorg.com</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<VersionPrefix>1.1.0</VersionPrefix>
+		<FileVersion>1.1.0.0</FileVersion>
+		<AssemblyVersion>1.1.0.0</AssemblyVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Commands\BoonOrg.Commands.Interfaces\BoonOrg.Commands.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Functions\BoonOrg.Functions.Domain\BoonOrg.Functions.Domain.csproj" />
+		<ProjectReference Include="..\..\Functions\BoonOrg.Functions.Interfaces\BoonOrg.Functions.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Identification\BoonOrg.Identification.Interfaces\BoonOrg.Identification.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Registrations\BoonOrg.Registrations.Interfaces\BoonOrg.Registrations.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Storage\BoonOrg.Storage.Interfaces\BoonOrg.Storage.Interfaces.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\BoonOrg.Scripting.Interfaces\BoonOrg.Scripting.Interfaces.csproj" />
+	</ItemGroup>
+</Project>

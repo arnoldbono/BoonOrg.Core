@@ -1,0 +1,1 @@
+﻿BoonOrg.Actions.Domain is the domain package for actions.

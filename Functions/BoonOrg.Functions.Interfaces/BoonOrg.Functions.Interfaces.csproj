@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>BoonOrg.Functions</RootNamespace>
+		<AssemblyName>BoonOrg.Functions.Interfaces</AssemblyName>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Company>Roland Boon</Company>
+		<Copyright>Copyright © 2022</Copyright>
+		<Description>API for functions with muliple parameters.</Description>
+		<PackageProjectUrl>https://boonorg.com</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<VersionPrefix>1.1.0</VersionPrefix>
+		<FileVersion>1.1.0.0</FileVersion>
+		<AssemblyVersion>1.1.0.0</AssemblyVersion>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="readme.md" Pack="True" PackagePath="" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Identification\BoonOrg.Identification.Interfaces\BoonOrg.Identification.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Registrations\BoonOrg.Registrations.Interfaces\BoonOrg.Registrations.Interfaces.csproj" />
+	</ItemGroup>
+</Project>

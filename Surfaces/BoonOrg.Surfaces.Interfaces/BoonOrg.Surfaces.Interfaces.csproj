@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>BoonOrg.Surfaces</RootNamespace>
+		<AssemblyName>BoonOrg.Surfaces.Interfaces</AssemblyName>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Company>Roland Boon</Company>
+		<Copyright>Copyright © 2022</Copyright>
+		<Description>Interfaces for Surfaces</Description>
+		<PackageProjectUrl>https://boonorg.com</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<VersionPrefix>1.1.0</VersionPrefix>
+		<FileVersion>1.1.0.0</FileVersion>
+		<AssemblyVersion>1.1.0.0</AssemblyVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Commands\BoonOrg.Commands.Interfaces\BoonOrg.Commands.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Geometry\BoonOrg.Geometry.Interfaces\BoonOrg.Geometry.Interfaces.csproj" />
+	</ItemGroup>
+</Project>

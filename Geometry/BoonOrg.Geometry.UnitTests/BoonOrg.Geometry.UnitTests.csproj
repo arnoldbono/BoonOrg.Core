@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>BoonOrg.Geometry.UnitTests</RootNamespace>
+		<AssemblyName>BoonOrg.Geometry.UnitTests</AssemblyName>
+		<ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+		<VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+		<VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Company>Roland Boon</Company>
+		<Copyright>Copyright © 2022</Copyright>
+		<Description>Unit tests for geometry.</Description>
+		<PackageProjectUrl>https://boonorg.com</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<VersionPrefix>1.0.2</VersionPrefix>
+		<FileVersion>1.0.2.0</FileVersion>
+		<AssemblyVersion>1.0.2.0</AssemblyVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" />
+		<PackageReference Include="MSTest.TestAdapter" />
+		<PackageReference Include="MSTest.TestFramework" />
+		<PackageReference Include="coverlet.collector" >
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Commands\BoonOrg.Commands.Interfaces\BoonOrg.Commands.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Functions\BoonOrg.Functions.Interfaces\BoonOrg.Functions.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Identification\BoonOrg.Identification.Domain\BoonOrg.Identification.Domain.csproj" />
+		<ProjectReference Include="..\..\Identification\BoonOrg.Identification.Interfaces\BoonOrg.Identification.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Registrations\BoonOrg.Registrations.Domain\BoonOrg.Registrations.Domain.csproj" />
+		<ProjectReference Include="..\..\Registrations\BoonOrg.Registrations.Interfaces\BoonOrg.Registrations.Interfaces.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\BoonOrg.Geometry.Interfaces\BoonOrg.Geometry.Interfaces.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<ProjectGuid>{5475323B-F83C-404A-A495-107053CACA25}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<RootNamespace>BoonOrg.DrawingTools</RootNamespace>
+		<AssemblyName>BoonOrg.DrawingTools.Logic</AssemblyName>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Company>Roland Boon</Company>
+		<Copyright>Copyright © 2023</Copyright>
+		<Description>Logic for DrawingTools</Description>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://boonorg.com</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<VersionPrefix>1.1.0</VersionPrefix>
+		<FileVersion>1.1.0.0</FileVersion>
+		<AssemblyVersion>1.1.0.0</AssemblyVersion>
+	</PropertyGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\BoonOrg.DrawingTools.Domain\BoonOrg.DrawingTools.Domain.csproj" />
+	  <ProjectReference Include="..\BoonOrg.DrawingTools.Interfaces\BoonOrg.DrawingTools.Interfaces.csproj" />
+	</ItemGroup>
+</Project>

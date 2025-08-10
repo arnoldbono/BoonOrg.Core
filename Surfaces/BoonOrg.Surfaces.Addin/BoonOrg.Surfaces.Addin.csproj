@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>BoonOrg.Surfaces.Addin</RootNamespace>
+		<AssemblyName>BoonOrg.Surfaces.Addin</AssemblyName>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Company>Roland Boon</Company>
+		<Copyright>Copyright © 2023</Copyright>
+		<Description>Addin for Surfaces</Description>
+		<PackageProjectUrl>https://boonorg.com</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<VersionPrefix>1.1.0</VersionPrefix>
+		<FileVersion>1.1.0.0</FileVersion>
+		<AssemblyVersion>1.1.0.0</AssemblyVersion>
+	</PropertyGroup>
+	<ItemGroup>
+      <ProjectReference Include="..\..\Geometry\BoonOrg.Geometry.Interfaces\BoonOrg.Geometry.Interfaces.csproj" />
+      <ProjectReference Include="..\..\Commands\BoonOrg.Commands.Interfaces\BoonOrg.Commands.Interfaces.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+      <ProjectReference Include="..\BoonOrg.Surfaces.Interfaces\BoonOrg.Surfaces.Interfaces.csproj" />
+      <ProjectReference Include="..\BoonOrg.Surfaces.Domain\BoonOrg.Surfaces.Domain.csproj" />
+      <ProjectReference Include="..\BoonOrg.Surfaces.Logic\BoonOrg.Surfaces.Logic.csproj" />
+ 	  <ProjectReference Include="..\BoonOrg.Surfaces.Persistance\BoonOrg.Surfaces.Persistance.csproj" />
+	</ItemGroup>
+</Project>

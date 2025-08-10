@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>BoonOrg.Storage.Addin</RootNamespace>
+		<AssemblyName>BoonOrg.Storage.Addin</AssemblyName>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Company>Roland Boon</Company>
+		<Copyright>Copyright © 2022</Copyright>
+		<Description>A package for registering storage classes.</Description>
+		<NeutralLanguage>en</NeutralLanguage>
+		<PackageProjectUrl>https://boonorg.com</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<VersionPrefix>1.2.0</VersionPrefix>
+		<FileVersion>1.2.0.0</FileVersion>
+		<AssemblyVersion>1.2.0.0</AssemblyVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Commands\BoonOrg.Commands.Interfaces\BoonOrg.Commands.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Functions\BoonOrg.Functions.Interfaces\BoonOrg.Functions.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Identification\\BoonOrg.Identification.Interfaces\BoonOrg.Identification.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Registrations\BoonOrg.Registrations.Interfaces\BoonOrg.Registrations.Interfaces.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\BoonOrg.Storage.Domain\BoonOrg.Storage.Domain.csproj" />
+		<ProjectReference Include="..\BoonOrg.Storage.Interfaces\BoonOrg.Storage.Interfaces.csproj" />
+		<ProjectReference Include="..\BoonOrg.Storage.Logic\BoonOrg.Storage.Logic.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>BoonOrg.Geometry</RootNamespace>
+		<AssemblyName>BoonOrg.Geometry.Interfaces</AssemblyName>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Company>Roland Boon</Company>
+		<Copyright>Copyright © 2022</Copyright>
+		<Description>API for geometry.</Description>
+		<PackageProjectUrl>https://boonorg.com</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<VersionPrefix>1.2.0</VersionPrefix>
+		<FileVersion>1.2.0.0</FileVersion>
+		<AssemblyVersion>1.2.0.0</AssemblyVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Actions\BoonOrg.Actions.Interfaces\BoonOrg.Actions.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Commands\BoonOrg.Commands.Interfaces\BoonOrg.Commands.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Functions\BoonOrg.Functions.Interfaces\BoonOrg.Functions.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Identification\BoonOrg.Identification.Interfaces\BoonOrg.Identification.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Registrations\BoonOrg.Registrations.Interfaces\BoonOrg.Registrations.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Storage\BoonOrg.Storage.Interfaces\BoonOrg.Storage.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Units\BoonOrg.Units.Interfaces\BoonOrg.Units.Interfaces.csproj" />
+	</ItemGroup>
+</Project>

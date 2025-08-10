@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <NuspecFile>BoonOrg.Core.nuspec</NuspecFile>
+    <PackageId>BoonOrg.Core</PackageId>
+    <Version>1.7.0</Version>
+    <Authors>Roland Boon</Authors>
+    <Description>Packaging project for BoonOrg.Core using a nuspec file.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BoonOrg.Core</id>
+    <version>1.7.0</version>
+    <authors>Roland Boon</authors>
+    <owners>BoonOrg</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <readme>README.md</readme>
+    <projectUrl>https://boonorg.com/</projectUrl>
+    <description>BoonOrg.Core</description>
+    <copyright>Copyright © Roland Boon</copyright>
+    <tags>BoonOrg</tags>
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Autofac" version="[8.0.0, )" exclude="Build, Analyzers" />
+        <dependency id="System.Reactive" version="[6.0.0, )" exclude="Build, Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Output/BoonOrg.Actions.Addin.pdb" target="lib\net8.0\BoonOrg.Actions.Addin.pdb" />
+    <file src="Output/BoonOrg.Actions.Addin.dll" target="lib\net8.0\BoonOrg.Actions.Addin.dll" />
+    <file src="Output/BoonOrg.Actions.Domain.pdb" target="lib\net8.0\BoonOrg.Actions.Domain.pdb" />
+    <file src="Output/BoonOrg.Actions.Domain.dll" target="lib\net8.0\BoonOrg.Actions.Domain.dll" />
+    <file src="Output/BoonOrg.Actions.Interfaces.pdb" target="lib\net8.0\BoonOrg.Actions.Interfaces.pdb" />
+    <file src="Output/BoonOrg.Actions.Interfaces.dll" target="lib\net8.0\BoonOrg.Actions.Interfaces.dll" />
+	<!-- -->
+    <file src="Output/BoonOrg.Commands.Addin.pdb" target="lib\net8.0\BoonOrg.Commands.Addin.pdb" />
+    <file src="Output/BoonOrg.Commands.Addin.dll" target="lib\net8.0\BoonOrg.Commands.Addin.dll" />
+    <file src="Output/BoonOrg.Commands.Domain.pdb" target="lib\net8.0\BoonOrg.Commands.Domain.pdb" />
+    <file src="Output/BoonOrg.Commands.Domain.dll" target="lib\net8.0\BoonOrg.Commands.Domain.dll" />
+    <file src="Output/BoonOrg.Commands.Interfaces.pdb" target="lib\net8.0\BoonOrg.Commands.Interfaces.pdb" />
+    <file src="Output/BoonOrg.Commands.Interfaces.dll" target="lib\net8.0\BoonOrg.Commands.Interfaces.dll" />
+	<!-- -->
+    <file src="Output/BoonOrg.Identification.Addin.pdb" target="lib\net8.0\BoonOrg.Identification.Addin.pdb" />
+    <file src="Output/BoonOrg.Identification.Addin.dll" target="lib\net8.0\BoonOrg.Identification.Addin.dll" />
+    <file src="Output/BoonOrg.Identification.Domain.pdb" target="lib\net8.0\BoonOrg.Identification.Domain.pdb" />
+    <file src="Output/BoonOrg.Identification.Domain.dll" target="lib\net8.0\BoonOrg.Identification.Domain.dll" />
+    <file src="Output/BoonOrg.Identification.Interfaces.pdb" target="lib\net8.0\BoonOrg.Identification.Interfaces.pdb" />
+    <file src="Output/BoonOrg.Identification.Interfaces.dll" target="lib\net8.0\BoonOrg.Identification.Interfaces.dll" />
+	<!-- -->
+    <file src="Output/BoonOrg.Functions.Addin.pdb" target="lib\net8.0\BoonOrg.Functions.Addin.pdb" />
+    <file src="Output/BoonOrg.Functions.Addin.dll" target="lib\net8.0\BoonOrg.Functions.Addin.dll" />
+    <file src="Output/BoonOrg.Functions.Domain.pdb" target="lib\net8.0\BoonOrg.Functions.Domain.pdb" />
+    <file src="Output/BoonOrg.Functions.Domain.dll" target="lib\net8.0\BoonOrg.Functions.Domain.dll" />
+    <file src="Output/BoonOrg.Functions.Interfaces.pdb" target="lib\net8.0\BoonOrg.Functions.Interfaces.pdb" />
+    <file src="Output/BoonOrg.Functions.Interfaces.dll" target="lib\net8.0\BoonOrg.Functions.Interfaces.dll" />
+    <file src="Output/BoonOrg.Functions.Logic.pdb" target="lib\net8.0\BoonOrg.Functions.Logic.pdb" />
+    <file src="Output/BoonOrg.Functions.Logic.dll" target="lib\net8.0\BoonOrg.Functions.Logic.dll" />
+	<!-- -->
+    <file src="Output/BoonOrg.Registrations.Domain.pdb" target="lib\net8.0\BoonOrg.Registrations.Domain.pdb" />
+    <file src="Output/BoonOrg.Registrations.Domain.dll" target="lib\net8.0\BoonOrg.Registrations.Domain.dll" />
+    <file src="Output/BoonOrg.Registrations.Interfaces.pdb" target="lib\net8.0\BoonOrg.Registrations.Interfaces.pdb" />
+    <file src="Output/BoonOrg.Registrations.Interfaces.dll" target="lib\net8.0\BoonOrg.Registrations.Interfaces.dll" />
+	<!-- -->
+    <file src="Output/BoonOrg.Geometry.Addin.pdb" target="lib\net8.0\BoonOrg.Geometry.Addin.pdb" />
+    <file src="Output/BoonOrg.Geometry.Addin.dll" target="lib\net8.0\BoonOrg.Geometry.Addin.dll" />
+    <file src="Output/BoonOrg.Geometry.Domain.pdb" target="lib\net8.0\BoonOrg.Geometry.Domain.pdb" />
+    <file src="Output/BoonOrg.Geometry.Domain.dll" target="lib\net8.0\BoonOrg.Geometry.Domain.dll" />
+    <file src="Output/BoonOrg.Geometry.Interfaces.pdb" target="lib\net8.0\BoonOrg.Geometry.Interfaces.pdb" />
+    <file src="Output/BoonOrg.Geometry.Interfaces.dll" target="lib\net8.0\BoonOrg.Geometry.Interfaces.dll" />
+    <file src="Output/BoonOrg.Geometry.Logic.pdb" target="lib\net8.0\BoonOrg.Geometry.Logic.pdb" />
+    <file src="Output/BoonOrg.Geometry.Logic.dll" target="lib\net8.0\BoonOrg.Geometry.Logic.dll" />
+    <file src="Output/BoonOrg.Geometry.Storage.pdb" target="lib\net8.0\BoonOrg.Geometry.Storage.pdb" />
+    <file src="Output/BoonOrg.Geometry.Storage.dll" target="lib\net8.0\BoonOrg.Geometry.Storage.dll" />
+	<!-- -->
+    <file src="Output/BoonOrg.Units.Addin.pdb" target="lib\net8.0\BoonOrg.Units.Addin.pdb" />
+    <file src="Output/BoonOrg.Units.Addin.dll" target="lib\net8.0\BoonOrg.Units.Addin.dll" />
+    <file src="Output/BoonOrg.Units.Domain.pdb" target="lib\net8.0\BoonOrg.Units.Domain.pdb" />
+    <file src="Output/BoonOrg.Units.Domain.dll" target="lib\net8.0\BoonOrg.Units.Domain.dll" />
+    <file src="Output/BoonOrg.Units.Interfaces.pdb" target="lib\net8.0\BoonOrg.Units.Interfaces.pdb" />
+    <file src="Output/BoonOrg.Units.Interfaces.dll" target="lib\net8.0\BoonOrg.Units.Interfaces.dll" />
+	<!-- -->
+    <file src="Output/BoonOrg.Surfaces.Addin.pdb" target="lib\net8.0\BoonOrg.Surfaces.Addin.pdb" />
+    <file src="Output/BoonOrg.Surfaces.Addin.dll" target="lib\net8.0\BoonOrg.Surfaces.Addin.dll" />
+    <file src="Output/BoonOrg.Surfaces.Domain.pdb" target="lib\net8.0\BoonOrg.Surfaces.Domain.pdb" />
+    <file src="Output/BoonOrg.Surfaces.Domain.dll" target="lib\net8.0\BoonOrg.Surfaces.Domain.dll" />
+    <file src="Output/BoonOrg.Surfaces.Interfaces.pdb" target="lib\net8.0\BoonOrg.Surfaces.Interfaces.pdb" />
+    <file src="Output/BoonOrg.Surfaces.Interfaces.dll" target="lib\net8.0\BoonOrg.Surfaces.Interfaces.dll" />
+    <file src="Output/BoonOrg.Surfaces.Logic.pdb" target="lib\net8.0\BoonOrg.Surfaces.Logic.pdb" />
+    <file src="Output/BoonOrg.Surfaces.Logic.dll" target="lib\net8.0\BoonOrg.Surfaces.Logic.dll" />
+    <file src="Output/BoonOrg.Surfaces.Persistence.pdb" target="lib\net8.0\BoonOrg.Surfaces.Persistence.pdb" />
+    <file src="Output/BoonOrg.Surfaces.Persistence.dll" target="lib\net8.0\BoonOrg.Surfaces.Persistence.dll" />
+	<!-- -->
+    <file src="Output/BoonOrg.Storage.Addin.pdb" target="lib\net8.0\BoonOrg.Storage.Addin.pdb" />
+    <file src="Output/BoonOrg.Storage.Addin.dll" target="lib\net8.0\BoonOrg.Storage.Addin.dll" />
+    <file src="Output/BoonOrg.Storage.Domain.pdb" target="lib\net8.0\BoonOrg.Storage.Domain.pdb" />
+    <file src="Output/BoonOrg.Storage.Domain.dll" target="lib\net8.0\BoonOrg.Storage.Domain.dll" />
+    <file src="Output/BoonOrg.Storage.Interfaces.pdb" target="lib\net8.0\BoonOrg.Storage.Interfaces.pdb" />
+    <file src="Output/BoonOrg.Storage.Interfaces.dll" target="lib\net8.0\BoonOrg.Storage.Interfaces.dll" />
+    <file src="Output/BoonOrg.Storage.Logic.pdb" target="lib\net8.0\BoonOrg.Storage.Logic.pdb" />
+    <file src="Output/BoonOrg.Storage.Logic.dll" target="lib\net8.0\BoonOrg.Storage.Logic.dll" />
+	<!-- -->
+    <file src="Output/BoonOrg.Scripting.Addin.pdb" target="lib\net8.0\BoonOrg.Scripting.Addin.pdb" />
+    <file src="Output/BoonOrg.Scripting.Addin.dll" target="lib\net8.0\BoonOrg.Scripting.Addin.dll" />
+    <file src="Output/BoonOrg.Scripting.Domain.pdb" target="lib\net8.0\BoonOrg.Scripting.Domain.pdb" />
+    <file src="Output/BoonOrg.Scripting.Domain.dll" target="lib\net8.0\BoonOrg.Scripting.Domain.dll" />
+    <file src="Output/BoonOrg.Scripting.Interfaces.pdb" target="lib\net8.0\BoonOrg.Scripting.Interfaces.pdb" />
+    <file src="Output/BoonOrg.Scripting.Interfaces.dll" target="lib\net8.0\BoonOrg.Scripting.Interfaces.dll" />
+	<!-- -->
+    <file src="Output/BoonOrg.DrawingTools.Addin.pdb" target="lib\net8.0\BoonOrg.DrawingTools.Addin.pdb" />
+    <file src="Output/BoonOrg.DrawingTools.Addin.dll" target="lib\net8.0\BoonOrg.DrawingTools.Addin.dll" />
+    <file src="Output/BoonOrg.DrawingTools.Domain.pdb" target="lib\net8.0\BoonOrg.DrawingTools.Domain.pdb" />
+    <file src="Output/BoonOrg.DrawingTools.Domain.dll" target="lib\net8.0\BoonOrg.DrawingTools.Domain.dll" />
+    <file src="Output/BoonOrg.DrawingTools.Interfaces.pdb" target="lib\net8.0\BoonOrg.DrawingTools.Interfaces.pdb" />
+    <file src="Output/BoonOrg.DrawingTools.Interfaces.dll" target="lib\net8.0\BoonOrg.DrawingTools.Interfaces.dll" />
+    <file src="Output/BoonOrg.DrawingTools.Logic.pdb" target="lib\net8.0\BoonOrg.DrawingTools.Logic.pdb" />
+    <file src="Output/BoonOrg.DrawingTools.Logic.dll" target="lib\net8.0\BoonOrg.DrawingTools.Logic.dll" />
+	<!-- -->
+    <file src="README.md" target="README.md" />
+  </files>
+</package>

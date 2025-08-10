@@ -1,0 +1,29 @@
+﻿<!--<?xml version="1.0" encoding="utf-8"?>-->
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>BoonOrg.Identification.Addin</RootNamespace>
+		<AssemblyName>BoonOrg.Identification.Addin</AssemblyName>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Company>Roland Boon</Company>
+		<Copyright>Copyright © 2022</Copyright>
+		<Description>Implementation to identify class instances by name and GUID.</Description>
+		<NeutralLanguage>en</NeutralLanguage>
+		<PackageProjectUrl>https://boonorg.com</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<VersionPrefix>1.1.0</VersionPrefix>
+		<FileVersion>1.1.0.0</FileVersion>
+		<AssemblyVersion>1.1.0.0</AssemblyVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Registrations\BoonOrg.Registrations.Interfaces\BoonOrg.Registrations.Interfaces.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\BoonOrg.Identification.Domain\BoonOrg.Identification.Domain.csproj" />
+	  <ProjectReference Include="..\BoonOrg.Identification.Interfaces\BoonOrg.Identification.Interfaces.csproj" />
+	</ItemGroup>
+</Project>
