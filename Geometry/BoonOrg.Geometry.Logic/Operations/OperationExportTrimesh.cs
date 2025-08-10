@@ -18,13 +18,16 @@ namespace BoonOrg.Geometry.Logic.Operations
     {
         private readonly ITrimeshExporterFactory m_trimeshExporterFactory;
         private readonly IDocumentServer m_documentServer;
+        private readonly Func<IMaterial> m_materialFunc;
 
         public OperationExportTrimesh(IParameterCollection parameters,
             ITrimeshExporterFactory trimeshExporterFactory,
-            IDocumentServer documentServer) : base(parameters)
+            IDocumentServer documentServer,
+            Func<IMaterial> materialFunc) : base(parameters)
         {
             m_trimeshExporterFactory = trimeshExporterFactory;
             m_documentServer = documentServer;
+            m_materialFunc = materialFunc;
         }
 
         public bool Execute(ICommandExecuter commandExecuter)
@@ -54,8 +57,15 @@ namespace BoonOrg.Geometry.Logic.Operations
             }
 
             var material = container.FindByName<IMaterial>(trimesh.Material);
+            if (material == null)
+            {
+                material = m_materialFunc();
+                trimesh.Material = @$"{trimeshName}material";
+                material.Identification.Rename(trimesh.Material);
+                container.Add(material);
+            }
             var trimeshExporter = m_trimeshExporterFactory.Create(selectedExporter);
-            return trimeshExporter.Export(new ITrimesh[] { trimesh }, new IMaterial[] { material }, uri, includeNormals);
+            return trimeshExporter.Export([trimesh], [material], uri, includeNormals);
         }
     }
 }
