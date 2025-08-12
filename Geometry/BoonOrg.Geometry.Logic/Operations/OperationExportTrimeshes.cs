@@ -21,14 +21,17 @@ namespace BoonOrg.Geometry.Logic.Operations
     {
         private readonly ITrimeshExporterFactory m_trimeshExporterFactory;
         private readonly IDocumentServer m_documentServer;
+        private readonly Func<IMaterial> m_materialFunc;
 
         public OperationExportTrimeshes(IParameterCollection parameters,
             ITrimeshExporterFactory trimeshExporterFactory,
-            IDocumentServer documentServer) : base(parameters)
+            IDocumentServer documentServer,
+            Func<IMaterial> materialFunc) : base(parameters)
         {
             m_trimeshExporterFactory = trimeshExporterFactory;
             m_documentServer = documentServer;
-        }
+            m_materialFunc = materialFunc;
+      }
 
         public bool Execute(ICommandExecuter commandExecuter)
         {
@@ -95,27 +98,30 @@ namespace BoonOrg.Geometry.Logic.Operations
         }
 
 
-        public static IMaterial[] GetMaterials(IEnumerable<ITrimesh> trimeshes, IIdentifiableContainer container)
+        public IMaterial[] GetMaterials(IEnumerable<ITrimesh> trimeshes, IIdentifiableContainer container)
         {
-            List<IMaterial> materials = new();
+            List<IMaterial> materials = [];
 
-            bool isMaterialValidAndNotYetIncluded(string material) =>
-                !string.IsNullOrEmpty(material) &&
-                materials.Any(y => string.Compare(y.Identification.Name, material, true) == 0);
-
-            foreach (var trimeshMaterial in trimeshes.Select(x => x.Material).Where(isMaterialValidAndNotYetIncluded))
+            foreach (var trimesh in trimeshes)
             {
-                var material = container.FindByName<IMaterial>(trimeshMaterial);
-                if (material != null)
+                var material = container.FindByName<IMaterial>(trimesh.Material);
+                if (material == null)
                 {
-                    // Only export a trimesh when it references (no or) a known material
-                    return null;
+                    material = m_materialFunc();
+                    trimesh.Material = @$"{trimesh.Identification.Name}material";
+                    material.Identification.Rename(trimesh.Material);
+                    container.Add(material);
+                }
+
+                if (materials.Any(m => string.Compare(m.Identification.Name, material.Identification.Name, false) == 0))
+                {
+                    continue; // Skip if material already added
                 }
 
                 materials.Add(material);
             }
 
-            return materials.ToArray();
+            return [.. materials];
         }
 
 
