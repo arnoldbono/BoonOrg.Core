@@ -25,6 +25,6 @@
       <ProjectReference Include="..\BoonOrg.Surfaces.Interfaces\BoonOrg.Surfaces.Interfaces.csproj" />
       <ProjectReference Include="..\BoonOrg.Surfaces.Domain\BoonOrg.Surfaces.Domain.csproj" />
       <ProjectReference Include="..\BoonOrg.Surfaces.Logic\BoonOrg.Surfaces.Logic.csproj" />
- 	  <ProjectReference Include="..\BoonOrg.Surfaces.Persistance\BoonOrg.Surfaces.Persistance.csproj" />
+ 	  <ProjectReference Include="..\BoonOrg.Surfaces.Persistence\BoonOrg.Surfaces.Persistence.csproj" />
 	</ItemGroup>
 </Project>
