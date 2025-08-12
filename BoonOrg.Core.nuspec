@@ -20,94 +20,94 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="Actions/BoonOrg.Actions.Addin/bin/x64/Debug/net8.0/BoonOrg.Actions.Addin.pdb" target="lib\net8.0\BoonOrg.Actions.Addin.pdb" />
-    <file src="Actions/BoonOrg.Actions.Addin/bin/x64/Debug/net8.0/BoonOrg.Actions.Addin.dll" target="lib\net8.0\BoonOrg.Actions.Addin.dll" />
-    <file src="Actions/BoonOrg.Actions.Domain/bin/x64/Debug/net8.0/BoonOrg.Actions.Domain.pdb" target="lib\net8.0\BoonOrg.Actions.Domain.pdb" />
-    <file src="Actions/BoonOrg.Actions.Domain/bin/x64/Debug/net8.0/BoonOrg.Actions.Domain.dll" target="lib\net8.0\BoonOrg.Actions.Domain.dll" />
-    <file src="Actions/BoonOrg.Actions.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Actions.Interfaces.pdb" target="lib\net8.0\BoonOrg.Actions.Interfaces.pdb" />
-    <file src="Actions/BoonOrg.Actions.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Actions.Interfaces.dll" target="lib\net8.0\BoonOrg.Actions.Interfaces.dll" />
+    <file src="Actions/BoonOrg.Actions.Addin/bin/arm64/Debug/net8.0/BoonOrg.Actions.Addin.pdb" target="lib\net8.0\BoonOrg.Actions.Addin.pdb" />
+    <file src="Actions/BoonOrg.Actions.Addin/bin/arm64/Debug/net8.0/BoonOrg.Actions.Addin.dll" target="lib\net8.0\BoonOrg.Actions.Addin.dll" />
+    <file src="Actions/BoonOrg.Actions.Domain/bin/arm64/Debug/net8.0/BoonOrg.Actions.Domain.pdb" target="lib\net8.0\BoonOrg.Actions.Domain.pdb" />
+    <file src="Actions/BoonOrg.Actions.Domain/bin/arm64/Debug/net8.0/BoonOrg.Actions.Domain.dll" target="lib\net8.0\BoonOrg.Actions.Domain.dll" />
+    <file src="Actions/BoonOrg.Actions.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Actions.Interfaces.pdb" target="lib\net8.0\BoonOrg.Actions.Interfaces.pdb" />
+    <file src="Actions/BoonOrg.Actions.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Actions.Interfaces.dll" target="lib\net8.0\BoonOrg.Actions.Interfaces.dll" />
 	<!-- -->
-    <file src="Commands/BoonOrg.Commands.Addin/bin/x64/Debug/net8.0/BoonOrg.Commands.Addin.pdb" target="lib\net8.0\BoonOrg.Commands.Addin.pdb" />
-    <file src="Commands/BoonOrg.Commands.Addin/bin/x64/Debug/net8.0/BoonOrg.Commands.Addin.dll" target="lib\net8.0\BoonOrg.Commands.Addin.dll" />
-    <file src="Commands/BoonOrg.Commands.Domain/bin/x64/Debug/net8.0/BoonOrg.Commands.Domain.pdb" target="lib\net8.0\BoonOrg.Commands.Domain.pdb" />
-    <file src="Commands/BoonOrg.Commands.Domain/bin/x64/Debug/net8.0/BoonOrg.Commands.Domain.dll" target="lib\net8.0\BoonOrg.Commands.Domain.dll" />
-    <file src="Commands/BoonOrg.Commands.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Commands.Interfaces.pdb" target="lib\net8.0\BoonOrg.Commands.Interfaces.pdb" />
-    <file src="Commands/BoonOrg.Commands.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Commands.Interfaces.dll" target="lib\net8.0\BoonOrg.Commands.Interfaces.dll" />
+    <file src="Commands/BoonOrg.Commands.Addin/bin/arm64/Debug/net8.0/BoonOrg.Commands.Addin.pdb" target="lib\net8.0\BoonOrg.Commands.Addin.pdb" />
+    <file src="Commands/BoonOrg.Commands.Addin/bin/arm64/Debug/net8.0/BoonOrg.Commands.Addin.dll" target="lib\net8.0\BoonOrg.Commands.Addin.dll" />
+    <file src="Commands/BoonOrg.Commands.Domain/bin/arm64/Debug/net8.0/BoonOrg.Commands.Domain.pdb" target="lib\net8.0\BoonOrg.Commands.Domain.pdb" />
+    <file src="Commands/BoonOrg.Commands.Domain/bin/arm64/Debug/net8.0/BoonOrg.Commands.Domain.dll" target="lib\net8.0\BoonOrg.Commands.Domain.dll" />
+    <file src="Commands/BoonOrg.Commands.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Commands.Interfaces.pdb" target="lib\net8.0\BoonOrg.Commands.Interfaces.pdb" />
+    <file src="Commands/BoonOrg.Commands.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Commands.Interfaces.dll" target="lib\net8.0\BoonOrg.Commands.Interfaces.dll" />
 	<!-- -->
-    <file src="Identification/BoonOrg.Identification.Addin/bin/x64/Debug/net8.0/BoonOrg.Identification.Addin.pdb" target="lib\net8.0\BoonOrg.Identification.Addin.pdb" />
-    <file src="Identification/BoonOrg.Identification.Addin/bin/x64/Debug/net8.0/BoonOrg.Identification.Addin.dll" target="lib\net8.0\BoonOrg.Identification.Addin.dll" />
-    <file src="Identification/BoonOrg.Identification.Domain/bin/x64/Debug/net8.0/BoonOrg.Identification.Domain.pdb" target="lib\net8.0\BoonOrg.Identification.Domain.pdb" />
-    <file src="Identification/BoonOrg.Identification.Domain/bin/x64/Debug/net8.0/BoonOrg.Identification.Domain.dll" target="lib\net8.0\BoonOrg.Identification.Domain.dll" />
-    <file src="Identification/BoonOrg.Identification.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Identification.Interfaces.pdb" target="lib\net8.0\BoonOrg.Identification.Interfaces.pdb" />
-    <file src="Identification/BoonOrg.Identification.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Identification.Interfaces.dll" target="lib\net8.0\BoonOrg.Identification.Interfaces.dll" />
+    <file src="Identification/BoonOrg.Identification.Addin/bin/arm64/Debug/net8.0/BoonOrg.Identification.Addin.pdb" target="lib\net8.0\BoonOrg.Identification.Addin.pdb" />
+    <file src="Identification/BoonOrg.Identification.Addin/bin/arm64/Debug/net8.0/BoonOrg.Identification.Addin.dll" target="lib\net8.0\BoonOrg.Identification.Addin.dll" />
+    <file src="Identification/BoonOrg.Identification.Domain/bin/arm64/Debug/net8.0/BoonOrg.Identification.Domain.pdb" target="lib\net8.0\BoonOrg.Identification.Domain.pdb" />
+    <file src="Identification/BoonOrg.Identification.Domain/bin/arm64/Debug/net8.0/BoonOrg.Identification.Domain.dll" target="lib\net8.0\BoonOrg.Identification.Domain.dll" />
+    <file src="Identification/BoonOrg.Identification.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Identification.Interfaces.pdb" target="lib\net8.0\BoonOrg.Identification.Interfaces.pdb" />
+    <file src="Identification/BoonOrg.Identification.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Identification.Interfaces.dll" target="lib\net8.0\BoonOrg.Identification.Interfaces.dll" />
 	<!-- -->
-    <file src="Functions/BoonOrg.Functions.Addin/bin/x64/Debug/net8.0/BoonOrg.Functions.Addin.pdb" target="lib\net8.0\BoonOrg.Functions.Addin.pdb" />
-    <file src="Functions/BoonOrg.Functions.Addin/bin/x64/Debug/net8.0/BoonOrg.Functions.Addin.dll" target="lib\net8.0\BoonOrg.Functions.Addin.dll" />
-    <file src="Functions/BoonOrg.Functions.Domain/bin/x64/Debug/net8.0/BoonOrg.Functions.Domain.pdb" target="lib\net8.0\BoonOrg.Functions.Domain.pdb" />
-    <file src="Functions/BoonOrg.Functions.Domain/bin/x64/Debug/net8.0/BoonOrg.Functions.Domain.dll" target="lib\net8.0\BoonOrg.Functions.Domain.dll" />
-    <file src="Functions/BoonOrg.Functions.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Functions.Interfaces.pdb" target="lib\net8.0\BoonOrg.Functions.Interfaces.pdb" />
-    <file src="Functions/BoonOrg.Functions.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Functions.Interfaces.dll" target="lib\net8.0\BoonOrg.Functions.Interfaces.dll" />
-    <file src="Functions/BoonOrg.Functions.Logic/bin/x64/Debug/net8.0/BoonOrg.Functions.Logic.pdb" target="lib\net8.0\BoonOrg.Functions.Logic.pdb" />
-    <file src="Functions/BoonOrg.Functions.Logic/bin/x64/Debug/net8.0/BoonOrg.Functions.Logic.dll" target="lib\net8.0\BoonOrg.Functions.Logic.dll" />
+    <file src="Functions/BoonOrg.Functions.Addin/bin/arm64/Debug/net8.0/BoonOrg.Functions.Addin.pdb" target="lib\net8.0\BoonOrg.Functions.Addin.pdb" />
+    <file src="Functions/BoonOrg.Functions.Addin/bin/arm64/Debug/net8.0/BoonOrg.Functions.Addin.dll" target="lib\net8.0\BoonOrg.Functions.Addin.dll" />
+    <file src="Functions/BoonOrg.Functions.Domain/bin/arm64/Debug/net8.0/BoonOrg.Functions.Domain.pdb" target="lib\net8.0\BoonOrg.Functions.Domain.pdb" />
+    <file src="Functions/BoonOrg.Functions.Domain/bin/arm64/Debug/net8.0/BoonOrg.Functions.Domain.dll" target="lib\net8.0\BoonOrg.Functions.Domain.dll" />
+    <file src="Functions/BoonOrg.Functions.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Functions.Interfaces.pdb" target="lib\net8.0\BoonOrg.Functions.Interfaces.pdb" />
+    <file src="Functions/BoonOrg.Functions.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Functions.Interfaces.dll" target="lib\net8.0\BoonOrg.Functions.Interfaces.dll" />
+    <file src="Functions/BoonOrg.Functions.Logic/bin/arm64/Debug/net8.0/BoonOrg.Functions.Logic.pdb" target="lib\net8.0\BoonOrg.Functions.Logic.pdb" />
+    <file src="Functions/BoonOrg.Functions.Logic/bin/arm64/Debug/net8.0/BoonOrg.Functions.Logic.dll" target="lib\net8.0\BoonOrg.Functions.Logic.dll" />
 	<!-- -->
-    <file src="Registrations/BoonOrg.Registrations.Domain/bin/x64/Debug/net8.0/BoonOrg.Registrations.Domain.pdb" target="lib\net8.0\BoonOrg.Registrations.Domain.pdb" />
-    <file src="Registrations/BoonOrg.Registrations.Domain/bin/x64/Debug/net8.0/BoonOrg.Registrations.Domain.dll" target="lib\net8.0\BoonOrg.Registrations.Domain.dll" />
-    <file src="Registrations/BoonOrg.Registrations.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Registrations.Interfaces.pdb" target="lib\net8.0\BoonOrg.Registrations.Interfaces.pdb" />
-    <file src="Registrations/BoonOrg.Registrations.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Registrations.Interfaces.dll" target="lib\net8.0\BoonOrg.Registrations.Interfaces.dll" />
+    <file src="Registrations/BoonOrg.Registrations.Domain/bin/arm64/Debug/net8.0/BoonOrg.Registrations.Domain.pdb" target="lib\net8.0\BoonOrg.Registrations.Domain.pdb" />
+    <file src="Registrations/BoonOrg.Registrations.Domain/bin/arm64/Debug/net8.0/BoonOrg.Registrations.Domain.dll" target="lib\net8.0\BoonOrg.Registrations.Domain.dll" />
+    <file src="Registrations/BoonOrg.Registrations.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Registrations.Interfaces.pdb" target="lib\net8.0\BoonOrg.Registrations.Interfaces.pdb" />
+    <file src="Registrations/BoonOrg.Registrations.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Registrations.Interfaces.dll" target="lib\net8.0\BoonOrg.Registrations.Interfaces.dll" />
 	<!-- -->
-    <file src="Geometry/BoonOrg.Geometry.Addin/bin/x64/Debug/net8.0/BoonOrg.Geometry.Addin.pdb" target="lib\net8.0\BoonOrg.Geometry.Addin.pdb" />
-    <file src="Geometry/BoonOrg.Geometry.Addin/bin/x64/Debug/net8.0/BoonOrg.Geometry.Addin.dll" target="lib\net8.0\BoonOrg.Geometry.Addin.dll" />
-    <file src="Geometry/BoonOrg.Geometry.Domain/bin/x64/Debug/net8.0/BoonOrg.Geometry.Domain.pdb" target="lib\net8.0\BoonOrg.Geometry.Domain.pdb" />
-    <file src="Geometry/BoonOrg.Geometry.Domain/bin/x64/Debug/net8.0/BoonOrg.Geometry.Domain.dll" target="lib\net8.0\BoonOrg.Geometry.Domain.dll" />
-    <file src="Geometry/BoonOrg.Geometry.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Geometry.Interfaces.pdb" target="lib\net8.0\BoonOrg.Geometry.Interfaces.pdb" />
-    <file src="Geometry/BoonOrg.Geometry.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Geometry.Interfaces.dll" target="lib\net8.0\BoonOrg.Geometry.Interfaces.dll" />
-    <file src="Geometry/BoonOrg.Geometry.Logic/bin/x64/Debug/net8.0/BoonOrg.Geometry.Logic.pdb" target="lib\net8.0\BoonOrg.Geometry.Logic.pdb" />
-    <file src="Geometry/BoonOrg.Geometry.Logic/bin/x64/Debug/net8.0/BoonOrg.Geometry.Logic.dll" target="lib\net8.0\BoonOrg.Geometry.Logic.dll" />
-    <file src="Geometry/BoonOrg.Geometry.Storage/bin/x64/Debug/net8.0/BoonOrg.Geometry.Storage.pdb" target="lib\net8.0\BoonOrg.Geometry.Storage.pdb" />
-    <file src="Geometry/BoonOrg.Geometry.Storage/bin/x64/Debug/net8.0/BoonOrg.Geometry.Storage.dll" target="lib\net8.0\BoonOrg.Geometry.Storage.dll" />
+    <file src="Geometry/BoonOrg.Geometry.Addin/bin/arm64/Debug/net8.0/BoonOrg.Geometry.Addin.pdb" target="lib\net8.0\BoonOrg.Geometry.Addin.pdb" />
+    <file src="Geometry/BoonOrg.Geometry.Addin/bin/arm64/Debug/net8.0/BoonOrg.Geometry.Addin.dll" target="lib\net8.0\BoonOrg.Geometry.Addin.dll" />
+    <file src="Geometry/BoonOrg.Geometry.Domain/bin/arm64/Debug/net8.0/BoonOrg.Geometry.Domain.pdb" target="lib\net8.0\BoonOrg.Geometry.Domain.pdb" />
+    <file src="Geometry/BoonOrg.Geometry.Domain/bin/arm64/Debug/net8.0/BoonOrg.Geometry.Domain.dll" target="lib\net8.0\BoonOrg.Geometry.Domain.dll" />
+    <file src="Geometry/BoonOrg.Geometry.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Geometry.Interfaces.pdb" target="lib\net8.0\BoonOrg.Geometry.Interfaces.pdb" />
+    <file src="Geometry/BoonOrg.Geometry.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Geometry.Interfaces.dll" target="lib\net8.0\BoonOrg.Geometry.Interfaces.dll" />
+    <file src="Geometry/BoonOrg.Geometry.Logic/bin/arm64/Debug/net8.0/BoonOrg.Geometry.Logic.pdb" target="lib\net8.0\BoonOrg.Geometry.Logic.pdb" />
+    <file src="Geometry/BoonOrg.Geometry.Logic/bin/arm64/Debug/net8.0/BoonOrg.Geometry.Logic.dll" target="lib\net8.0\BoonOrg.Geometry.Logic.dll" />
+    <file src="Geometry/BoonOrg.Geometry.Storage/bin/arm64/Debug/net8.0/BoonOrg.Geometry.Storage.pdb" target="lib\net8.0\BoonOrg.Geometry.Storage.pdb" />
+    <file src="Geometry/BoonOrg.Geometry.Storage/bin/arm64/Debug/net8.0/BoonOrg.Geometry.Storage.dll" target="lib\net8.0\BoonOrg.Geometry.Storage.dll" />
 	<!-- -->
-    <file src="Units/BoonOrg.Units.Addin/bin/x64/Debug/net8.0/BoonOrg.Units.Addin.pdb" target="lib\net8.0\BoonOrg.Units.Addin.pdb" />
-    <file src="Units/BoonOrg.Units.Addin/bin/x64/Debug/net8.0/BoonOrg.Units.Addin.dll" target="lib\net8.0\BoonOrg.Units.Addin.dll" />
-    <file src="Units/BoonOrg.Units.Domain/bin/x64/Debug/net8.0/BoonOrg.Units.Domain.pdb" target="lib\net8.0\BoonOrg.Units.Domain.pdb" />
-    <file src="Units/BoonOrg.Units.Domain/bin/x64/Debug/net8.0/BoonOrg.Units.Domain.dll" target="lib\net8.0\BoonOrg.Units.Domain.dll" />
-    <file src="Units/BoonOrg.Units.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Units.Interfaces.pdb" target="lib\net8.0\BoonOrg.Units.Interfaces.pdb" />
-    <file src="Units/BoonOrg.Units.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Units.Interfaces.dll" target="lib\net8.0\BoonOrg.Units.Interfaces.dll" />
+    <file src="Units/BoonOrg.Units.Addin/bin/arm64/Debug/net8.0/BoonOrg.Units.Addin.pdb" target="lib\net8.0\BoonOrg.Units.Addin.pdb" />
+    <file src="Units/BoonOrg.Units.Addin/bin/arm64/Debug/net8.0/BoonOrg.Units.Addin.dll" target="lib\net8.0\BoonOrg.Units.Addin.dll" />
+    <file src="Units/BoonOrg.Units.Domain/bin/arm64/Debug/net8.0/BoonOrg.Units.Domain.pdb" target="lib\net8.0\BoonOrg.Units.Domain.pdb" />
+    <file src="Units/BoonOrg.Units.Domain/bin/arm64/Debug/net8.0/BoonOrg.Units.Domain.dll" target="lib\net8.0\BoonOrg.Units.Domain.dll" />
+    <file src="Units/BoonOrg.Units.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Units.Interfaces.pdb" target="lib\net8.0\BoonOrg.Units.Interfaces.pdb" />
+    <file src="Units/BoonOrg.Units.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Units.Interfaces.dll" target="lib\net8.0\BoonOrg.Units.Interfaces.dll" />
 	<!-- -->
-    <file src="Surfaces/BoonOrg.Surfaces.Addin/bin/x64/Debug/net8.0/BoonOrg.Surfaces.Addin.pdb" target="lib\net8.0\BoonOrg.Surfaces.Addin.pdb" />
-    <file src="Surfaces/BoonOrg.Surfaces.Addin/bin/x64/Debug/net8.0/BoonOrg.Surfaces.Addin.dll" target="lib\net8.0\BoonOrg.Surfaces.Addin.dll" />
-    <file src="Surfaces/BoonOrg.Surfaces.Domain/bin/x64/Debug/net8.0/BoonOrg.Surfaces.Domain.pdb" target="lib\net8.0\BoonOrg.Surfaces.Domain.pdb" />
-    <file src="Surfaces/BoonOrg.Surfaces.Domain/bin/x64/Debug/net8.0/BoonOrg.Surfaces.Domain.dll" target="lib\net8.0\BoonOrg.Surfaces.Domain.dll" />
-    <file src="Surfaces/BoonOrg.Surfaces.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Surfaces.Interfaces.pdb" target="lib\net8.0\BoonOrg.Surfaces.Interfaces.pdb" />
-    <file src="Surfaces/BoonOrg.Surfaces.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Surfaces.Interfaces.dll" target="lib\net8.0\BoonOrg.Surfaces.Interfaces.dll" />
-    <file src="Surfaces/BoonOrg.Surfaces.Logic/bin/x64/Debug/net8.0/BoonOrg.Surfaces.Logic.pdb" target="lib\net8.0\BoonOrg.Surfaces.Logic.pdb" />
-    <file src="Surfaces/BoonOrg.Surfaces.Logic/bin/x64/Debug/net8.0/BoonOrg.Surfaces.Logic.dll" target="lib\net8.0\BoonOrg.Surfaces.Logic.dll" />
-    <file src="Surfaces/BoonOrg.Surfaces.Persistence/bin/x64/Debug/net8.0/BoonOrg.Surfaces.Persistence.pdb" target="lib\net8.0\BoonOrg.Surfaces.Persistence.pdb" />
-    <file src="Surfaces/BoonOrg.Surfaces.Persistence/bin/x64/Debug/net8.0/BoonOrg.Surfaces.Persistence.dll" target="lib\net8.0\BoonOrg.Surfaces.Persistence.dll" />
+    <file src="Surfaces/BoonOrg.Surfaces.Addin/bin/arm64/Debug/net8.0/BoonOrg.Surfaces.Addin.pdb" target="lib\net8.0\BoonOrg.Surfaces.Addin.pdb" />
+    <file src="Surfaces/BoonOrg.Surfaces.Addin/bin/arm64/Debug/net8.0/BoonOrg.Surfaces.Addin.dll" target="lib\net8.0\BoonOrg.Surfaces.Addin.dll" />
+    <file src="Surfaces/BoonOrg.Surfaces.Domain/bin/arm64/Debug/net8.0/BoonOrg.Surfaces.Domain.pdb" target="lib\net8.0\BoonOrg.Surfaces.Domain.pdb" />
+    <file src="Surfaces/BoonOrg.Surfaces.Domain/bin/arm64/Debug/net8.0/BoonOrg.Surfaces.Domain.dll" target="lib\net8.0\BoonOrg.Surfaces.Domain.dll" />
+    <file src="Surfaces/BoonOrg.Surfaces.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Surfaces.Interfaces.pdb" target="lib\net8.0\BoonOrg.Surfaces.Interfaces.pdb" />
+    <file src="Surfaces/BoonOrg.Surfaces.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Surfaces.Interfaces.dll" target="lib\net8.0\BoonOrg.Surfaces.Interfaces.dll" />
+    <file src="Surfaces/BoonOrg.Surfaces.Logic/bin/arm64/Debug/net8.0/BoonOrg.Surfaces.Logic.pdb" target="lib\net8.0\BoonOrg.Surfaces.Logic.pdb" />
+    <file src="Surfaces/BoonOrg.Surfaces.Logic/bin/arm64/Debug/net8.0/BoonOrg.Surfaces.Logic.dll" target="lib\net8.0\BoonOrg.Surfaces.Logic.dll" />
+    <file src="Surfaces/BoonOrg.Surfaces.Persistence/bin/arm64/Debug/net8.0/BoonOrg.Surfaces.Persistence.pdb" target="lib\net8.0\BoonOrg.Surfaces.Persistence.pdb" />
+    <file src="Surfaces/BoonOrg.Surfaces.Persistence/bin/arm64/Debug/net8.0/BoonOrg.Surfaces.Persistence.dll" target="lib\net8.0\BoonOrg.Surfaces.Persistence.dll" />
 	<!-- -->
-    <file src="Storage/BoonOrg.Storage.Addin/bin/x64/Debug/net8.0/BoonOrg.Storage.Addin.pdb" target="lib\net8.0\BoonOrg.Storage.Addin.pdb" />
-    <file src="Storage/BoonOrg.Storage.Addin/bin/x64/Debug/net8.0/BoonOrg.Storage.Addin.dll" target="lib\net8.0\BoonOrg.Storage.Addin.dll" />
-    <file src="Storage/BoonOrg.Storage.Domain/bin/x64/Debug/net8.0/BoonOrg.Storage.Domain.pdb" target="lib\net8.0\BoonOrg.Storage.Domain.pdb" />
-    <file src="Storage/BoonOrg.Storage.Domain/bin/x64/Debug/net8.0/BoonOrg.Storage.Domain.dll" target="lib\net8.0\BoonOrg.Storage.Domain.dll" />
-    <file src="Storage/BoonOrg.Storage.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Storage.Interfaces.pdb" target="lib\net8.0\BoonOrg.Storage.Interfaces.pdb" />
-    <file src="Storage/BoonOrg.Storage.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Storage.Interfaces.dll" target="lib\net8.0\BoonOrg.Storage.Interfaces.dll" />
-    <file src="Storage/BoonOrg.Storage.Logic/bin/x64/Debug/net8.0/BoonOrg.Storage.Logic.pdb" target="lib\net8.0\BoonOrg.Storage.Logic.pdb" />
-    <file src="Storage/BoonOrg.Storage.Logic/bin/x64/Debug/net8.0/BoonOrg.Storage.Logic.dll" target="lib\net8.0\BoonOrg.Storage.Logic.dll" />
+    <file src="Storage/BoonOrg.Storage.Addin/bin/arm64/Debug/net8.0/BoonOrg.Storage.Addin.pdb" target="lib\net8.0\BoonOrg.Storage.Addin.pdb" />
+    <file src="Storage/BoonOrg.Storage.Addin/bin/arm64/Debug/net8.0/BoonOrg.Storage.Addin.dll" target="lib\net8.0\BoonOrg.Storage.Addin.dll" />
+    <file src="Storage/BoonOrg.Storage.Domain/bin/arm64/Debug/net8.0/BoonOrg.Storage.Domain.pdb" target="lib\net8.0\BoonOrg.Storage.Domain.pdb" />
+    <file src="Storage/BoonOrg.Storage.Domain/bin/arm64/Debug/net8.0/BoonOrg.Storage.Domain.dll" target="lib\net8.0\BoonOrg.Storage.Domain.dll" />
+    <file src="Storage/BoonOrg.Storage.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Storage.Interfaces.pdb" target="lib\net8.0\BoonOrg.Storage.Interfaces.pdb" />
+    <file src="Storage/BoonOrg.Storage.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Storage.Interfaces.dll" target="lib\net8.0\BoonOrg.Storage.Interfaces.dll" />
+    <file src="Storage/BoonOrg.Storage.Logic/bin/arm64/Debug/net8.0/BoonOrg.Storage.Logic.pdb" target="lib\net8.0\BoonOrg.Storage.Logic.pdb" />
+    <file src="Storage/BoonOrg.Storage.Logic/bin/arm64/Debug/net8.0/BoonOrg.Storage.Logic.dll" target="lib\net8.0\BoonOrg.Storage.Logic.dll" />
 	<!-- -->
-    <file src="Scripting/BoonOrg.Scripting.Addin/bin/x64/Debug/net8.0/BoonOrg.Scripting.Addin.pdb" target="lib\net8.0\BoonOrg.Scripting.Addin.pdb" />
-    <file src="Scripting/BoonOrg.Scripting.Addin/bin/x64/Debug/net8.0/BoonOrg.Scripting.Addin.dll" target="lib\net8.0\BoonOrg.Scripting.Addin.dll" />
-    <file src="Scripting/BoonOrg.Scripting.Domain/bin/x64/Debug/net8.0/BoonOrg.Scripting.Domain.pdb" target="lib\net8.0\BoonOrg.Scripting.Domain.pdb" />
-    <file src="Scripting/BoonOrg.Scripting.Domain/bin/x64/Debug/net8.0/BoonOrg.Scripting.Domain.dll" target="lib\net8.0\BoonOrg.Scripting.Domain.dll" />
-    <file src="Scripting/BoonOrg.Scripting.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Scripting.Interfaces.pdb" target="lib\net8.0\BoonOrg.Scripting.Interfaces.pdb" />
-    <file src="Scripting/BoonOrg.Scripting.Interfaces/bin/x64/Debug/net8.0/BoonOrg.Scripting.Interfaces.dll" target="lib\net8.0\BoonOrg.Scripting.Interfaces.dll" />
+    <file src="Scripting/BoonOrg.Scripting.Addin/bin/arm64/Debug/net8.0/BoonOrg.Scripting.Addin.pdb" target="lib\net8.0\BoonOrg.Scripting.Addin.pdb" />
+    <file src="Scripting/BoonOrg.Scripting.Addin/bin/arm64/Debug/net8.0/BoonOrg.Scripting.Addin.dll" target="lib\net8.0\BoonOrg.Scripting.Addin.dll" />
+    <file src="Scripting/BoonOrg.Scripting.Domain/bin/arm64/Debug/net8.0/BoonOrg.Scripting.Domain.pdb" target="lib\net8.0\BoonOrg.Scripting.Domain.pdb" />
+    <file src="Scripting/BoonOrg.Scripting.Domain/bin/arm64/Debug/net8.0/BoonOrg.Scripting.Domain.dll" target="lib\net8.0\BoonOrg.Scripting.Domain.dll" />
+    <file src="Scripting/BoonOrg.Scripting.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Scripting.Interfaces.pdb" target="lib\net8.0\BoonOrg.Scripting.Interfaces.pdb" />
+    <file src="Scripting/BoonOrg.Scripting.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.Scripting.Interfaces.dll" target="lib\net8.0\BoonOrg.Scripting.Interfaces.dll" />
 	<!-- -->
-    <file src="DrawingTools/BoonOrg.DrawingTools.Addin/bin/x64/Debug/net8.0/BoonOrg.DrawingTools.Addin.pdb" target="lib\net8.0\BoonOrg.DrawingTools.Addin.pdb" />
-    <file src="DrawingTools/BoonOrg.DrawingTools.Addin/bin/x64/Debug/net8.0/BoonOrg.DrawingTools.Addin.dll" target="lib\net8.0\BoonOrg.DrawingTools.Addin.dll" />
-    <file src="DrawingTools/BoonOrg.DrawingTools.Domain/bin/x64/Debug/net8.0/BoonOrg.DrawingTools.Domain.pdb" target="lib\net8.0\BoonOrg.DrawingTools.Domain.pdb" />
-    <file src="DrawingTools/BoonOrg.DrawingTools.Domain/bin/x64/Debug/net8.0/BoonOrg.DrawingTools.Domain.dll" target="lib\net8.0\BoonOrg.DrawingTools.Domain.dll" />
-    <file src="DrawingTools/BoonOrg.DrawingTools.Interfaces/bin/x64/Debug/net8.0/BoonOrg.DrawingTools.Interfaces.pdb" target="lib\net8.0\BoonOrg.DrawingTools.Interfaces.pdb" />
-    <file src="DrawingTools/BoonOrg.DrawingTools.Interfaces/bin/x64/Debug/net8.0/BoonOrg.DrawingTools.Interfaces.dll" target="lib\net8.0\BoonOrg.DrawingTools.Interfaces.dll" />
-    <file src="DrawingTools/BoonOrg.DrawingTools.Logic/bin/x64/Debug/net8.0/BoonOrg.DrawingTools.Logic.pdb" target="lib\net8.0\BoonOrg.DrawingTools.Logic.pdb" />
-    <file src="DrawingTools/BoonOrg.DrawingTools.Logic/bin/x64/Debug/net8.0/BoonOrg.DrawingTools.Logic.dll" target="lib\net8.0\BoonOrg.DrawingTools.Logic.dll" />
+    <file src="DrawingTools/BoonOrg.DrawingTools.Addin/bin/arm64/Debug/net8.0/BoonOrg.DrawingTools.Addin.pdb" target="lib\net8.0\BoonOrg.DrawingTools.Addin.pdb" />
+    <file src="DrawingTools/BoonOrg.DrawingTools.Addin/bin/arm64/Debug/net8.0/BoonOrg.DrawingTools.Addin.dll" target="lib\net8.0\BoonOrg.DrawingTools.Addin.dll" />
+    <file src="DrawingTools/BoonOrg.DrawingTools.Domain/bin/arm64/Debug/net8.0/BoonOrg.DrawingTools.Domain.pdb" target="lib\net8.0\BoonOrg.DrawingTools.Domain.pdb" />
+    <file src="DrawingTools/BoonOrg.DrawingTools.Domain/bin/arm64/Debug/net8.0/BoonOrg.DrawingTools.Domain.dll" target="lib\net8.0\BoonOrg.DrawingTools.Domain.dll" />
+    <file src="DrawingTools/BoonOrg.DrawingTools.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.DrawingTools.Interfaces.pdb" target="lib\net8.0\BoonOrg.DrawingTools.Interfaces.pdb" />
+    <file src="DrawingTools/BoonOrg.DrawingTools.Interfaces/bin/arm64/Debug/net8.0/BoonOrg.DrawingTools.Interfaces.dll" target="lib\net8.0\BoonOrg.DrawingTools.Interfaces.dll" />
+    <file src="DrawingTools/BoonOrg.DrawingTools.Logic/bin/arm64/Debug/net8.0/BoonOrg.DrawingTools.Logic.pdb" target="lib\net8.0\BoonOrg.DrawingTools.Logic.pdb" />
+    <file src="DrawingTools/BoonOrg.DrawingTools.Logic/bin/arm64/Debug/net8.0/BoonOrg.DrawingTools.Logic.dll" target="lib\net8.0\BoonOrg.DrawingTools.Logic.dll" />
 	<!-- -->
     <file src="README.md" target="README.md" />
   </files>

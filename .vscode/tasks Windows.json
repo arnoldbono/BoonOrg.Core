@@ -749,7 +749,7 @@
         "build Core.Surfaces.Interfaces",
         "build Core.Surfaces.Domain",
         "build Core.Surfaces.Logic",
-        "build Core.Surfaces.Persistance"
+        "build Core.Surfaces.Persistence"
       ]
     },
     {
