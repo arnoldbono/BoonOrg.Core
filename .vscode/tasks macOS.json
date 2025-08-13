@@ -783,12 +783,12 @@
       ]
     },
     {
-      "label": "build Core.Surfaces.Persistance",
+      "label": "build Core.Surfaces.Persistence",
       "command": "dotnet",
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/Surfaces/BoonOrg.Surfaces.Persistance/BoonOrg.Surfaces.Persistance.csproj",
+        "${workspaceFolder}/Surfaces/BoonOrg.Surfaces.Persistence/BoonOrg.Surfaces.Persistence.csproj",
         "-c",
         "Debug",
         "-p:Platform=x64",
@@ -821,7 +821,7 @@
         "build Core.Surfaces.Interfaces",
         "build Core.Surfaces.Domain",
         "build Core.Surfaces.Logic",
-        "build Core.Surfaces.Persistance"
+        "build Core.Surfaces.Persistence"
       ]
     },
     {
