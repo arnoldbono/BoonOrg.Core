@@ -10,9 +10,13 @@
         "${workspaceFolder}/Registrations/BoonOrg.Registrations.Interfaces/BoonOrg.Registrations.Interfaces.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -27,9 +31,13 @@
         "${workspaceFolder}/Registrations/BoonOrg.Registrations.Domain/BoonOrg.Registrations.Domain.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -53,9 +61,13 @@
         "${workspaceFolder}/Identification/BoonOrg.Identification.Interfaces/BoonOrg.Identification.Interfaces.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -70,9 +82,13 @@
         "${workspaceFolder}/Identification/BoonOrg.Identification.Domain/BoonOrg.Identification.Domain.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -90,9 +106,13 @@
         "${workspaceFolder}/Identification/BoonOrg.Identification.Addin/BoonOrg.Identification.Addin.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -119,9 +139,13 @@
         "${workspaceFolder}/Functions/BoonOrg.Functions.Interfaces/BoonOrg.Functions.Interfaces.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -139,9 +163,13 @@
         "${workspaceFolder}/Functions/BoonOrg.Functions.Domain/BoonOrg.Functions.Domain.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -159,9 +187,13 @@
         "${workspaceFolder}/Functions/BoonOrg.Functions.Logic/BoonOrg.Functions.Logic.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -179,9 +211,13 @@
         "${workspaceFolder}/Functions/BoonOrg.Functions.Addin/BoonOrg.Functions.Addin.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -209,9 +245,13 @@
         "${workspaceFolder}/Commands/BoonOrg.Commands.Interfaces/BoonOrg.Commands.Interfaces.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -230,9 +270,13 @@
         "${workspaceFolder}/Commands/BoonOrg.Commands.Domain/BoonOrg.Commands.Domain.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -251,9 +295,13 @@
         "${workspaceFolder}/Commands/BoonOrg.Commands.Addin/BoonOrg.Commands.Addin.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -281,9 +329,13 @@
         "${workspaceFolder}/Storage/BoonOrg.Storage.Interfaces/BoonOrg.Storage.Interfaces.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -301,9 +353,13 @@
         "${workspaceFolder}/Storage/BoonOrg.Storage.Domain/BoonOrg.Storage.Domain.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -325,9 +381,13 @@
         "${workspaceFolder}/Storage/BoonOrg.Storage.Logic/BoonOrg.Storage.Logic.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -347,9 +407,13 @@
         "${workspaceFolder}/Storage/BoonOrg.Storage.Addin/BoonOrg.Storage.Addin.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -379,9 +443,13 @@
         "${workspaceFolder}/Actions/BoonOrg.Actions.Interfaces/BoonOrg.Actions.Interfaces.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -398,9 +466,13 @@
         "${workspaceFolder}/Actions/BoonOrg.Actions.Domain/BoonOrg.Actions.Domain.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -419,9 +491,13 @@
         "${workspaceFolder}/Actions/BoonOrg.Actions.Addin/BoonOrg.Actions.Addin.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -447,9 +523,13 @@
         "${workspaceFolder}/Units/BoonOrg.Units.Interfaces/BoonOrg.Units.Interfaces.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -464,9 +544,13 @@
         "${workspaceFolder}/Units/BoonOrg.Units.Domain/BoonOrg.Units.Domain.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -484,9 +568,13 @@
         "${workspaceFolder}/Units/BoonOrg.Units.Addin/BoonOrg.Units.Addin.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -514,9 +602,13 @@
         "${workspaceFolder}/Geometry/BoonOrg.Geometry.Interfaces/BoonOrg.Geometry.Interfaces.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -539,9 +631,13 @@
         "${workspaceFolder}/Surfaces/BoonOrg.Surfaces.Interfaces/BoonOrg.Surfaces.Interfaces.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -559,9 +655,13 @@
         "${workspaceFolder}/DrawingTools/BoonOrg.DrawingTools.Interfaces/BoonOrg.DrawingTools.Interfaces.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -579,9 +679,13 @@
         "${workspaceFolder}/Geometry/BoonOrg.Geometry.Domain/BoonOrg.Geometry.Domain.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -603,9 +707,13 @@
         "${workspaceFolder}/Geometry/BoonOrg.Geometry.Logic/BoonOrg.Geometry.Logic.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -631,9 +739,13 @@
         "${workspaceFolder}/Geometry/BoonOrg.Geometry.Storage/BoonOrg.Geometry.Storage.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -655,9 +767,13 @@
         "${workspaceFolder}/Geometry/BoonOrg.Geometry.TestData/BoonOrg.Geometry.TestData.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -674,9 +790,13 @@
         "${workspaceFolder}/Geometry/BoonOrg.Geometry.UnitTests/BoonOrg.Geometry.UnitTests.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -699,9 +819,7 @@
         "${workspaceFolder}/Geometry/BoonOrg.Geometry.Addin/BoonOrg.Geometry.Addin.csproj",
         "-c",
         "Debug",
-        "-p:Platform=x64",
-        "-o",
-        "${workspaceFolder}/Output",
+        "-p:Platform=arm64",
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -723,9 +841,7 @@
         "${workspaceFolder}/Geometry/BoonOrg.Geometry.Logic.Tests/BoonOrg.Geometry.Logic.Tests.csproj",
         "-c",
         "Debug",
-        "-p:Platform=x64",
-        "-o",
-        "${workspaceFolder}/Output",
+        "-p:Platform=arm64",
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -752,9 +868,13 @@
         "${workspaceFolder}/Surfaces/BoonOrg.Surfaces.Domain/BoonOrg.Surfaces.Domain.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -771,9 +891,13 @@
         "${workspaceFolder}/Surfaces/BoonOrg.Surfaces.Logic/BoonOrg.Surfaces.Logic.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -791,9 +915,13 @@
         "${workspaceFolder}/Surfaces/BoonOrg.Surfaces.Persistence/BoonOrg.Surfaces.Persistence.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -811,9 +939,13 @@
         "${workspaceFolder}/Surfaces/BoonOrg.Surfaces.Addin/BoonOrg.Surfaces.Addin.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -840,9 +972,13 @@
         "${workspaceFolder}/DrawingTools/BoonOrg.DrawingTools.Domain/BoonOrg.DrawingTools.Domain.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -860,9 +996,13 @@
         "${workspaceFolder}/DrawingTools/BoonOrg.DrawingTools.Logic/BoonOrg.DrawingTools.Logic.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -879,9 +1019,13 @@
         "${workspaceFolder}/DrawingTools/BoonOrg.DrawingTools.Addin/BoonOrg.DrawingTools.Addin.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -905,9 +1049,13 @@
         "${workspaceFolder}/Scripting/BoonOrg.Scripting.Interfaces/BoonOrg.Scripting.Interfaces.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -927,9 +1075,13 @@
         "${workspaceFolder}/Scripting/BoonOrg.Scripting.Domain/BoonOrg.Scripting.Domain.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -952,9 +1104,13 @@
         "${workspaceFolder}/Scripting/BoonOrg.Scripting.Addin/BoonOrg.Scripting.Addin.csproj",
         "-c",
         "Debug",
+<<<<<<< HEAD
         "-p:Platform=x64",
         "-o",
         "${workspaceFolder}/Output",
+=======
+        "-p:Platform=arm64",
+>>>>>>> e94a3d8d1e02dd74b383c80a079af45524942098
         "-f:net8.0"
       ],
       "problemMatcher": "$msCompile",
@@ -1010,7 +1166,7 @@
         "${workspaceFolder}/BoonOrg.Core.Pack.csproj",
         "-c",
         "Debug",
-        "-p:Platform=x64",
+        "-p:Platform=arm64",
         "-o",
         "${workspaceFolder}/../BoonOrg/LocalPackages"
       ],
