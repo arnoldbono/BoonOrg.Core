@@ -1,6 +1,7 @@
 ﻿// (c) 2017 Roland Boon
 
 using System;
+using System.Linq;
 
 namespace BoonOrg.Geometry.Domain
 {
@@ -147,43 +148,76 @@ namespace BoonOrg.Geometry.Domain
 
         public void RotateX(ITriangleContainer model, double cosx, double sinx)
         {
-            foreach (IPoint point in model.Vertices)
+            var vertices = model.Vertices.ToArray();
+
+            int i = 0;
+            foreach (var normal in model.Normals)
             {
-                // double x = point.X;
+                var point = vertices[i++];
+                double ny = point.Y + normal.Y;
+                double nz = point.Z + normal.Z;
+
+                normal.Y = ny * cosx - nz * sinx;
+                normal.Z = ny * sinx + nz * cosx;
+
                 double y = point.Y * cosx - point.Z * sinx;
                 double z = point.Y * sinx + point.Z * cosx;
 
-                // point.X = x;
                 point.Y = y;
                 point.Z = z;
+
+                normal.Y = normal.Y - y;
+                normal.Z = normal.Z - z;
             }
         }
 
         public void RotateY(ITriangleContainer model, double cosy, double siny)
         {
-            foreach (IPoint point in model.Vertices)
+            var vertices = model.Vertices.ToArray();
+
+            int i = 0;
+            foreach (var normal in model.Normals)
             {
+                var point = vertices[i++];
+                double nx = point.X + normal.X;
+                double nz = point.Z + normal.Z;
+
+                normal.X = nx * cosy + nz * siny;
+                normal.Z = -nx * siny + nz * cosy;
+
                 double x = point.X * cosy + point.Z * siny;
-                // double y = point.y;
                 double z = -point.X * siny + point.Z * cosy;
 
                 point.X = x;
-                // point.Y = y;
                 point.Z = z;
+
+                normal.X = normal.X - x;
+                normal.Z = normal.Z - z;
             }
         }
 
         public void RotateZ(ITriangleContainer model, double cosz, double sinz)
         {
-            foreach (IPoint point in model.Vertices)
+            var vertices = model.Vertices.ToArray();
+
+            int i = 0;
+            foreach (var normal in model.Normals)
             {
+                var point = vertices[i++];
+                double nx = point.X + normal.X;
+                double ny = point.Y + normal.Y;
+
+                normal.X = nx * cosz - ny * sinz;
+                normal.Y = nx * sinz + ny * cosz;
+
                 double x = point.X * cosz - point.Y * sinz;
                 double y = point.X * sinz + point.Y * cosz;
-                // double z = point.Z;
 
                 point.X = x;
                 point.Y = y;
-                // point.Z = z;
+
+                normal.X = normal.X - x;
+                normal.Y = normal.Y - y;
             }
         }
 
