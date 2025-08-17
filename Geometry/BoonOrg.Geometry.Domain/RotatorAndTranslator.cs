@@ -148,76 +148,82 @@ namespace BoonOrg.Geometry.Domain
 
         public void RotateX(ITriangleContainer model, double cosx, double sinx)
         {
-            var vertices = model.Vertices.ToArray();
+            var normals = model.Normals?.ToArray();
+            bool hasNormals = normals != null && normals.Length > 0;
 
             int i = 0;
-            foreach (var normal in model.Normals)
+            foreach (var point in model.Vertices)
             {
-                var point = vertices[i++];
-                double ny = point.Y + normal.Y;
-                double nz = point.Z + normal.Z;
+                double py = point.Y;
+                double pz = point.Z;
 
-                normal.Y = ny * cosx - nz * sinx;
-                normal.Z = ny * sinx + nz * cosx;
+                point.Y = py * cosx - pz * sinx;
+                point.Z = py * sinx + pz * cosx;
 
-                double y = point.Y * cosx - point.Z * sinx;
-                double z = point.Y * sinx + point.Z * cosx;
+                if (hasNormals)
+                {
+                    var normal = normals[i++];
 
-                point.Y = y;
-                point.Z = z;
+                    double ny = normal.Y + py;
+                    double nz = normal.Z + pz;
 
-                normal.Y = normal.Y - y;
-                normal.Z = normal.Z - z;
+                    normal.Y = ny * cosx - nz * sinx - point.Y;
+                    normal.Z = ny * sinx + nz * cosx - point.Z;
+                }
             }
         }
 
         public void RotateY(ITriangleContainer model, double cosy, double siny)
         {
-            var vertices = model.Vertices.ToArray();
+            var normals = model.Normals?.ToArray();
+            bool hasNormals = normals != null && normals.Length > 0;
 
             int i = 0;
-            foreach (var normal in model.Normals)
+            foreach (var point in model.Vertices)
             {
-                var point = vertices[i++];
-                double nx = point.X + normal.X;
-                double nz = point.Z + normal.Z;
+                double px = point.X;
+                double pz = point.Z;
 
-                normal.X = nx * cosy + nz * siny;
-                normal.Z = -nx * siny + nz * cosy;
+                point.X = px * cosy + pz * siny;
+                point.Z = -px * siny + pz * cosy;
 
-                double x = point.X * cosy + point.Z * siny;
-                double z = -point.X * siny + point.Z * cosy;
+                if (hasNormals)
+                {
+                    var normal = normals[i++];
 
-                point.X = x;
-                point.Z = z;
+                    double nx = normal.X + px;
+                    double nz = normal.Z + pz;
 
-                normal.X = normal.X - x;
-                normal.Z = normal.Z - z;
+                    normal.X = nx * cosy + nz * siny - point.X;
+                    normal.Z = -nx * siny + nz * cosy - point.Z;
+                }
             }
         }
 
         public void RotateZ(ITriangleContainer model, double cosz, double sinz)
         {
-            var vertices = model.Vertices.ToArray();
+            var normals = model.Normals?.ToArray();
+            bool hasNormals = normals != null && normals.Length > 0;
 
             int i = 0;
-            foreach (var normal in model.Normals)
+            foreach (var point in model.Vertices)
             {
-                var point = vertices[i++];
-                double nx = point.X + normal.X;
-                double ny = point.Y + normal.Y;
+                var px = point.X;
+                var py = point.Y;
 
-                normal.X = nx * cosz - ny * sinz;
-                normal.Y = nx * sinz + ny * cosz;
+                point.X = px * cosz - py * sinz;
+                point.Y = px * sinz + py * cosz;
 
-                double x = point.X * cosz - point.Y * sinz;
-                double y = point.X * sinz + point.Y * cosz;
+                if (hasNormals)
+                {
+                    var normal = normals[i++];
 
-                point.X = x;
-                point.Y = y;
+                    double nx = normal.X + px;
+                    double ny = normal.Y + py;
 
-                normal.X = normal.X - x;
-                normal.Y = normal.Y - y;
+                    normal.X = nx * cosz - ny * sinz - point.X;
+                    normal.Y = nx * sinz + ny * cosz - point.Y;
+                }
             }
         }
 

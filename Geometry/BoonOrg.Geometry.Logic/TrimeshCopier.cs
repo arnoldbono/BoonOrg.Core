@@ -35,12 +35,11 @@ namespace BoonOrg.Geometry.Logic
             var vertices = trimesh.Vertices.Select(p => p.Clone());
 
             var normals = m_normalsService.GetNormals(trimesh);
-            if (normals == null)
-            {
-                return m_trimeshCreator.Create(triangleVertexIndices, vertices, name);
-            }
-
-            return m_trimeshCreator.Create(triangleVertexIndices, vertices, normals.Select(n => n.Clone()), name);
+            ITrimesh result = (normals == null) ?
+                m_trimeshCreator.Create(triangleVertexIndices, vertices, name) :
+                m_trimeshCreator.Create(triangleVertexIndices, vertices, normals.Select(n => n.Clone()), name);
+            result.Material = trimesh.Material;
+            return result;
         }
     }
 }
