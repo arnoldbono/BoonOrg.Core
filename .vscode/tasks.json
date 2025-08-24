@@ -923,9 +923,8 @@
       "type": "process",
       "args": [
         "pack",
-        "${workspaceFolder}/BoonOrg.Core.Pack.csproj",
-        "-c",
-        "Debug",
+        "${workspaceFolder}/pack/BoonOrg.Core.Pack.csproj",
+        "-p:Configuration=Debug",
         "-p:Platform=arm64",
         "-o",
         "${workspaceFolder}/../BoonOrg/LocalPackages"
