@@ -34,15 +34,15 @@ namespace BoonOrg.Geometry.Storage
                 IDocumentInfo info = document.DocumentInfo;
                 if (info != null)
                 {
-                    int index = info.FilePath.LastIndexOf('\\');
+                    int index = info.FilePath.LastIndexOf(Path.DirectorySeparatorChar);
                     if (index > 0)
                     {
                         string folder = info.FilePath.Substring(0, index);
-                        if (path.StartsWith(@".\"))
+                        if (path.StartsWith(@$".{Path.DirectorySeparatorChar}"))
                         {
                             path = Path.Combine(folder, path.Substring(2));
                         }
-                        else if (!path.Contains(@"\"))
+                        else if (!path.Contains(Path.DirectorySeparatorChar))
                         {
                             path = Path.Combine(folder, path.Substring(1));
                         }
