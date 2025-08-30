@@ -7,6 +7,6 @@
     <Authors>Roland Boon</Authors>
     <Description>Packaging project for BoonOrg.Core using a nuspec file.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <NuspecProperties>configuration=$(Configuration);platform=$(Platform)</NuspecProperties>
+    <NuspecProperties>configuration=$(Configuration);platform=$(Platform);version=$(PackageVersion)</NuspecProperties>
   </PropertyGroup>
 </Project>

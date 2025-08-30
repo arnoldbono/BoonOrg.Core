@@ -14,13 +14,15 @@ namespace BoonOrg.Geometry.Domain.Creators
         private readonly Func<ITrimesh> m_trimeshFunc;
         private readonly ITrimeshPropertyNormalsService m_normalsService;
 
-        private readonly List<IPoint> m_vertices = new();
-        private readonly List<IVector> m_normals = new();
-        private readonly List<(int index1, int index2, int index3)> m_triangles = new();
+        private readonly List<IPoint> m_vertices = [];
+        private readonly List<IVector> m_normals = [];
+        private readonly List<(int index1, int index2, int index3)> m_triangles = [];
 
         private int m_checkForDuplicateCount = 0;
         private int m_checkForDuplicateIndex = 0;
-        private List<IPoint> m_checkForDuplicates = new();
+        private List<IPoint> m_checkForDuplicates = [];
+
+        public bool CheckForDuplicateVertices { get; set; } = false;
 
         public TrimeshCreator(Func<ITrimesh> trimeshFunc, ITrimeshPropertyNormalsService normalsService)
         {
@@ -75,6 +77,13 @@ namespace BoonOrg.Geometry.Domain.Creators
         public int AddVertex(IPoint vertex)
         {
             var count = m_vertices.Count;
+
+            if (!CheckForDuplicateVertices)
+            {
+                m_vertices.Add(vertex);
+                return count;
+            }
+
             var indexDuplicate = 0;
             var accuracy = 0.00000001;
 

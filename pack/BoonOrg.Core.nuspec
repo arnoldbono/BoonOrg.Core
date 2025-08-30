@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>BoonOrg.Core</id>
-    <version>1.7.0</version>
+    <version>$version$</version>
     <authors>Roland Boon</authors>
     <owners>BoonOrg</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

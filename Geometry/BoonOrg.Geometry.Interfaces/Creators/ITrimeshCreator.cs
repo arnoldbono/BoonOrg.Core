@@ -8,6 +8,8 @@ namespace BoonOrg.Geometry.Creators
 {
     public interface ITrimeshCreator : ICreator<ITrimesh>
     {
+        bool CheckForDuplicateVertices { get; set; }
+        
         void AddTriangle(int index1, int index2, int index3, bool reverseOrientation);
 
         void AddTriangle(int index1, int index2, int index3);
