@@ -26,6 +26,7 @@ namespace BoonOrg.Storage.Domain
             registrar.RegisterType<ParameterStorageProvider, IStorageProvider<IParameter>>();
 
             registrar.RegisterType<RootGroupCreator, IInitialDocumentContentCreator>();
+            registrar.RegisterType<FilePathCleanup, IFilePathCleanup>();
 
             registrar.RegisterType<OperationReadDocument>();
             registrar.RegisterType<OperationWriteDocument>();

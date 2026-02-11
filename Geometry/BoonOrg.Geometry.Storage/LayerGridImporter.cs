@@ -19,37 +19,20 @@ namespace BoonOrg.Geometry.Storage
 
         private readonly IPointCreator m_pointCreator;
         private readonly ILayerGridCreator m_gridCreator;
+        private readonly IFilePathCleanup m_filePathCleanup;
 
-        public LayerGridImporter(IPointCreator pointCreator, ILayerGridCreator gridCreator)
+        public LayerGridImporter(IPointCreator pointCreator, ILayerGridCreator gridCreator, IFilePathCleanup filePathCleanup)
         {
             m_pointCreator = pointCreator;
             m_gridCreator = gridCreator;
+            m_filePathCleanup = filePathCleanup;
         }
 
         /// <inheritdoc/>
         public ILayerGrid Import(IDocument document, string path, IUnit unit, string name)
         {
-            if (!Path.IsPathRooted(path))
-            {
-                IDocumentInfo info = document.DocumentInfo;
-                if (info != null)
-                {
-                    int index = info.FilePath.LastIndexOf(Path.DirectorySeparatorChar);
-                    if (index > 0)
-                    {
-                        string folder = info.FilePath.Substring(0, index);
-                        if (path.StartsWith(@$".{Path.DirectorySeparatorChar}"))
-                        {
-                            path = Path.Combine(folder, path.Substring(2));
-                        }
-                        else if (!path.Contains(Path.DirectorySeparatorChar))
-                        {
-                            path = Path.Combine(folder, path.Substring(1));
-                        }
-                    }
-                }
-            }
-            if (!File.Exists(path))
+            path = m_filePathCleanup.Cleanup(document, path);
+            if (!m_filePathCleanup.FileExists(path))
             {
                 return null;
             }

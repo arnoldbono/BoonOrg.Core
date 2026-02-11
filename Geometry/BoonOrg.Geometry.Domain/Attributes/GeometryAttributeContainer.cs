@@ -200,7 +200,7 @@ namespace BoonOrg.Geometry.Domain.Attributes
             }
 
             var documentAttributes = m_documentServer.Document?.Get<IGeometryAttributeContainer>();
-            if (documentAttributes != null)
+            if (documentAttributes != null && documentAttributes != this)
             {
                 if (documentAttributes.HasAttribute<IDrawSurfaceAttribute>(itemId))
                 {
